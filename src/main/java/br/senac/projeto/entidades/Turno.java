@@ -23,10 +23,10 @@ public class Turno {
     private String status;
 
     @Column(nullable = false)
-    private LocalDateTime DataHoraIni;
+    private LocalDateTime dataHoraIni;
 
     @Column(nullable = false)
-    private LocalDateTime DataHoraFim;
+    private LocalDateTime dataHoraFim;
 
     @Column(length = 1000)
     private String pendencias;
@@ -39,8 +39,8 @@ public class Turno {
         this.colabResp = colabResp;
         this.turno = turno;
         this.status = status;
-        DataHoraIni = dataHoraIni;
-        DataHoraFim = dataHoraFim;
+        this.dataHoraIni = dataHoraIni;
+        this.dataHoraFim = dataHoraFim;
         this.pendencias = pendencias;
     }
 
@@ -78,19 +78,19 @@ public class Turno {
     }
 
     public LocalDateTime getDataHoraIni() {
-        return DataHoraIni;
+        return dataHoraIni;
     }
 
     public void setDataHoraIni(LocalDateTime dataHoraIni) {
-        DataHoraIni = dataHoraIni;
+        this.dataHoraIni = dataHoraIni;
     }
 
     public LocalDateTime getDataHoraFim() {
-        return DataHoraFim;
+        return dataHoraFim;
     }
 
     public void setDataHoraFim(LocalDateTime dataHoraFim) {
-        DataHoraFim = dataHoraFim;
+        this.dataHoraFim = dataHoraFim;
     }
 
     public String getPendencias() {

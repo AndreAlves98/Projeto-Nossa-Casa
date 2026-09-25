@@ -53,8 +53,8 @@ public class TurnoService {
         saida.setColabResp(entrada.getColabResp());
         saida.setTurno(entrada.getTurno());
         saida.setStatus(entrada.getStatus());
-        saida.setDataHoraIni(entrada.getDataHoraIni());
-        saida.setDataHoraFim(entrada.getDataHoraIni());
+        saida.setDataHoraIni(entrada.getdataHoraIni());
+        saida.setDataHoraFim(entrada.getdataHoraIni());
         saida.setPendencias(entrada.getPendencias());
     }
 

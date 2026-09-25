@@ -11,8 +11,8 @@ public class TurnoRequestDto {
     private String colabResp;
     private String turno;
     private String status;
-    private LocalDateTime DataHoraIni;
-    private LocalDateTime DataHoraFim;
+    private LocalDateTime dataHoraIni;
+    private LocalDateTime dataHoraFim;
     private String pendencias;
 
     public TurnoRequestDto() {}
@@ -22,8 +22,8 @@ public class TurnoRequestDto {
         this.colabResp = colabResp;
         this.turno = turno;
         this.status = status;
-        DataHoraIni = dataHoraIni;
-        DataHoraFim = dataHoraFim;
+        this.dataHoraIni = dataHoraIni;
+        this.dataHoraFim = dataHoraFim;
         this.pendencias = pendencias;
     }
 
@@ -59,20 +59,20 @@ public class TurnoRequestDto {
         this.status = status;
     }
 
-    public LocalDateTime getDataHoraIni() {
-        return DataHoraIni;
+    public LocalDateTime getdataHoraIni() {
+        return dataHoraIni;
     }
 
-    public void setDataHoraIni(LocalDateTime dataHoraIni) {
-        DataHoraIni = dataHoraIni;
+    public void setdataHoraIni(LocalDateTime dataHoraIni) {
+        this.dataHoraIni = dataHoraIni;
     }
 
     public LocalDateTime getDataHoraFim() {
-        return DataHoraFim;
+        return dataHoraFim;
     }
 
     public void setDataHoraFim(LocalDateTime dataHoraFim) {
-        DataHoraFim = dataHoraFim;
+        this.dataHoraFim = dataHoraFim;
     }
 
     public String getPendencias() {
